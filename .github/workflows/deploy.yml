@@ -14,8 +14,8 @@ jobs:
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: cluster-damonx.6uqourb.mongodb.net
-      MONGODB_USERNAME: nzdamon_db_user
-      MONGODB_PASSWORD: WH2Uxk4BnfMqdYLC
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
